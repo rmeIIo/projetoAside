@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600&family=Poppins:wght@400;500&family=Work+Sans:wght@400;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,99 +14,62 @@
 
 body {
     font-family: Poppins, Helvetica, sans-serif;
+    margin: 0;
+    background: var(--body-bg-color);
+}
+
+.border {
+    border: 1px solid red;
 }
 
 .sidebar {
-    background-color: var(--green);
-    width: 260px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    align-items: flex-start;
+    width: 250px;
+    padding-top: 24px;
+    background: var(--green);
+    border: 1px solid red;
 }
 
-.logo {
-    margin-left: 29px;
-    margin-top: 24px;
-    margin-right: 119px;
-    margin-bottom: 26px;
+.logo-img {
+    margin: 0 0 26px 29px;
+    width: 64px;
+    height: 25px;
 }
 
-.menu {
-    margin-top: 24px;
-    margin-bottom: 26px;
-}
-
-.search {
-    margin: 0 14px;
-    background-color: var(--light-green);
-    width: 222px;
-    height: 50px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-.search img {
-}
-
-.search input {
+.sidebar-menu {
     background: none;
-    border: none
-}
-
-.navegacao {
-    list-style: none;
-}
-
-.navegacao li {
-    margin-bottom: 35px;
-}
-
-.navegacao li a {
-    text-decoration: none;
-    color: var(--text-color);
-    text-align: center;
-}
-
-.navegacao li a img {
-    padding: 0;
+    border: none;
     width: 24px;
-    height: 24px;
-    margin-right: 13px;
-}
-
-.perfil {
-    margin: 0;
-    margin-top: 305px;
-    height: 60px;
-    background-color: var(--light-green);
-}
-
-.vet {
-    width: 45px;
-    height: 45px;
-    border-radius: 12px;
-    margin-top: 8px;
-    margin-left: 9px;
-    margin-bottom: 7px;
-}
-
-.user-info h2 {
-    margin-top: 8px;
-    color: var(--text-color);
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.user-info h3 {
-    margin-top: 8px;
-    margin-right: 47px;
-    color: var(--text-color);
-    font-size: 8px;
-    font-weight: 400;
-}
-
-.log-out {
-    width: 24px;
-    margin-top: 18px;
     margin-right: 14px;
-    margin-left: 47px;
-    margin-bottom: 18px;
+    margin-left: 100px; 
+}
+
+.search-bar {
+    flex-direction: row;
+    margin: 26px 14px 20px 14px;
+    padding: 13px;
+    width: 222px;
+    background: var(--light-green);
+    border-radius: 12px;
+}
+
+.search-bar button {
+    display: inline-flex;
+    background: none;
+    border: none;
+    width: 24px;
+    border: 1px solid red;
+}
+
+.search-bar input {
+    width: 180px;
+    height: 23px;
+    background: none;
+    border: none;
+    color: white;
 }
