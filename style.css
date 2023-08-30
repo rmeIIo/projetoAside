@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: Poppins, Helvetica, sans-serif;
+    font-family: 'Poppins', Helvetica, sans-serif;
     margin: 0;
     background: var(--body-bg-color);
 }
@@ -50,7 +50,7 @@ body {
 }
 
 .search-bar {
-    flex-direction: row;
+    display: flex;
     margin: 26px 14px 20px 14px;
     padding: 13px;
     width: 222px;
@@ -59,11 +59,11 @@ body {
 }
 
 .search-bar button {
-    display: inline-flex;
+    padding: 0;
     background: none;
     border: none;
     width: 24px;
-    border: 1px solid red;
+    margin-right: 13px;
 }
 
 .search-bar input {
@@ -71,5 +71,11 @@ body {
     height: 23px;
     background: none;
     border: none;
-    color: white;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 500;
+}
+
+.search-bar input::placeholder {
+    color: var(--text-color);
 }
