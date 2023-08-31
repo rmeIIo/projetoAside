@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600&family=Poppins:wght@400;500&family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Poppins', Helvetica, sans-serif;
+    font-family: Poppins, Helvetica, sans-serif;
     margin: 0;
     background: var(--body-bg-color);
 }
@@ -32,7 +32,6 @@ body {
     width: 250px;
     padding-top: 24px;
     background: var(--green);
-    border: 1px solid red;
 }
 
 .logo-img {
@@ -105,7 +104,10 @@ body {
     justify-content: space-between;
     background: var(--light-green);
     width: 100%;
-    border: 1px solid red;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
 }
 
 .perfil img {
@@ -116,15 +118,37 @@ body {
     border-radius: 12px;
 }
 
-.perfil-infos span {
-    font-size: 15px;
-    margin-bottom: 0px;
+.perfil-infos {
+    margin-top: 10px;
 }
 
-.perfil-infos p {
+.perfil-infos-nome {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.perfil-infos-profissao {
     font-size: 12px;
+    font-weight: 400;
+}
+
+.perfil button {
+    margin-top: 18px;
 }
 
 .perfil button img {
     width: 24px;
+}
+
+.container {
+    display: inline-block;
+}
+
+.main {
+    font-family: Poppins;
+    margin-left: 286px;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--text-color);
 }
