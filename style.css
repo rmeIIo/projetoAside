@@ -101,33 +101,30 @@ body {
 }
 
 .perfil {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     background: var(--light-green);
     width: 100%;
     border: 1px solid red;
 }
 
 .perfil img {
-    float: left;
     margin-top: 8px;
     margin-left: 13px;
-    margin-right: 9px;
     width: 45px;
     height: 45px;
     border-radius: 12px;
 }
 
-.perfil span {
+.perfil-infos span {
     font-size: 15px;
-    margin-top: 12px;
     margin-bottom: 0px;
 }
 
-.perfil p {
+.perfil-infos p {
     font-size: 12px;
 }
 
-.perfil button {
-    float: right;
+.perfil button img {
     width: 24px;
 }
