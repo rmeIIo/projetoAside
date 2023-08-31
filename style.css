@@ -72,10 +72,18 @@ body {
     background: none;
     border: none;
     color: var(--text-color);
-    font-weight: bold;
     font-size: 500;
 }
 
 .search-bar input::placeholder {
     color: var(--text-color);
+    font-size: 500;
+}
+
+.btns {
+    padding: 0;
+    background: none;
+    border: none;
+    width: 169px;
+    margin-left: 27px;
 }
