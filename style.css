@@ -72,18 +72,62 @@ body {
     background: none;
     border: none;
     color: var(--text-color);
-    font-size: 500;
+    font-weight: 500;
 }
 
 .search-bar input::placeholder {
     color: var(--text-color);
-    font-size: 500;
+    font-weight: 500;
 }
 
 .btns {
     padding: 0;
+    margin-left: 27px;
     background: none;
     border: none;
-    width: 169px;
-    margin-left: 27px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 15px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.btns img {
+    width: 24px;
+    padding: 0;
+    margin-right: 13px;
+}
+
+.perfil {
+    display: inline-block;
+    background: var(--light-green);
+    width: 100%;
+    border: 1px solid red;
+}
+
+.perfil img {
+    float: left;
+    margin-top: 8px;
+    margin-left: 13px;
+    margin-right: 9px;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+}
+
+.perfil span {
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.perfil p {
+    font-size: 12px;
+}
+
+.perfil button {
+    float: right;
+    width: 24px;
 }
