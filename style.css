@@ -18,8 +18,17 @@ body {
     background: var(--body-bg-color);
 }
 
-.border {
-    border: 1px solid red;
+.container {
+    display: inline-block;
+}
+
+.main {
+    font-family: Poppins;
+    margin-left: 286px;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 25px;
+    color: var(--text-color);
 }
 
 .sidebar {
@@ -141,15 +150,3 @@ body {
     width: 24px;
 }
 
-.container {
-    display: inline-block;
-}
-
-.main {
-    font-family: Poppins;
-    margin-left: 286px;
-    overflow: hidden;
-    font-weight: 500;
-    font-size: 25px;
-    color: var(--text-color);
-}
