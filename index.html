@@ -7,40 +7,40 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <aside class="sidebar">
+    <aside class="sidebarOff" id="sidebar">
         <header class="sidebar-header">
-            <a class="logo-img" href=""><img src="./assets/logo.svg" alt=""></a>
-            <button class="sidebar-menu"><img src="./assets/menu.svg" alt=""></button>
+            <a class="logo-imgOff" id="logoImg" href=""><img src="./assets/logo.svg" alt=""></a>
+            <button class="sidebar-menu-hide" id="sidebar-menu" onclick="toggleMenu()"><img src="./assets/menu.svg" alt=""></button>
         </header>
         <nav>
-            <form class="search-bar">
+            <form class="search-bar-hide" id="searchBar">
                 <button><img src="./assets/search.svg" alt=""></button>
                 <input type="text" placeholder="Buscar">
             </form>
 
-            <button class="btns">
+            <button class="btnsOff" id="btns1">
                 <img src="./assets/grid.svg" alt=""> <span>Dashboard</span>
             </button>
 
-            <button class="btns">
+            <button class="btnsOff" id="btns2">
                 <img src="./assets/pet.svg" alt=""> <span>Pets</span>
             </button>
 
-            <button class="btns">
+            <button class="btnsOff" id="btns3">
                 <img src="./assets/user.svg" alt=""> <span>Clientes</span>
             </button>
 
-            <button class="btns">
+            <button class="btnsOff" id="btns4">
                 <img src="./assets/vet.svg" alt=""> <span>Vets</span>
             </button>
 
-            <button class="btns">
+            <button class="btnsOff" id="btns5">
                 <img src="./assets/settings.svg" alt=""> <span>Ajustes</span>
             </button>
 
-            <div class="perfil">
+            <div class="perfil-hide" id="perfil">
                 <img src="./assets/photo.jpeg" alt="">
-                <div class="perfil-infos">
+                <div class="perfil-infos-hide" id="perfilInfos">
                     <div class="perfil-infos-nome">
                         <span>Barbara Mello</span>
                     </div>
@@ -48,14 +48,14 @@
                         <span>Veterinária</p>
                     </div>
                 </div>
-                <button class="btn-logout">
+                <button class="btns-logout-hide" id="btnLogout">
                     <img src="./assets/log-out.svg" alt="">
                 </button>
             </div>
         </nav> 
     </aside>
 
-    <main class="main">
+    <main class="main-hide" id="main">
             <p>Dashboard</p>
     </main>
     <script src="./script.js"></script>

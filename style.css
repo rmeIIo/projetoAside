@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    transition: all 0.5s ease;
 }
 
 :root {
@@ -22,7 +23,7 @@ body {
     display: inline-block;
 }
 
-.main {
+.main, .main-hide {
     font-family: Poppins;
     margin-left: 286px;
     overflow: hidden;
@@ -31,7 +32,7 @@ body {
     color: var(--text-color);
 }
 
-.sidebar {
+.sidebar, .sidebarOff {
     position: fixed;
     top: 0;
     display: flex;
@@ -43,13 +44,13 @@ body {
     background: var(--green);
 }
 
-.logo-img {
+.logo-img, .logo-imgOff {
     margin: 0 0 26px 29px;
     width: 64px;
     height: 25px;
 }
 
-.sidebar-menu {
+.sidebar-menu, .sidebar-menu-hide {
     background: none;
     border: none;
     width: 24px;
@@ -58,7 +59,7 @@ body {
     cursor: pointer;
 }
 
-.search-bar {
+.search-bar, .search-bar-hide {
     display: flex;
     margin: 26px 14px 20px 14px;
     padding: 13px;
@@ -67,7 +68,7 @@ body {
     border-radius: 12px;
 }
 
-.search-bar button {
+.search-bar button, .search-bar-hide button {
     padding: 0;
     background: none;
     border: none;
@@ -75,7 +76,7 @@ body {
     margin-right: 13px;
 }
 
-.search-bar input {
+.search-bar input, .search-bar-hide input {
     width: 180px;
     height: 23px;
     background: none;
@@ -89,7 +90,7 @@ body {
     font-weight: 500;
 }
 
-.btns, .btn-logout {
+.btns, .btn-logout, .btnsOff, .btns-logout-hide {
     padding: 0;
     margin-left: 27px;
     background: none;
@@ -103,17 +104,17 @@ body {
     cursor: pointer;
 }
 
-.btns {
+.btns, .btnsOff {
     transition: ease-out 0.5s;
 }
 
-.btns img {
+.btns img, .btnsOff img {
     width: 24px;
     padding: 0;
     margin-right: 13px;
 }
 
-.btns:hover {
+.btns:hover, .btnsOff:hover {
     width: 222px;
     margin: 26px 14px 20px 14px;
     padding: 13px;
@@ -121,7 +122,7 @@ body {
     background: #8ed7c6;
 }
 
-.perfil {
+.perfil, .perfil-hide {
     display: flex;
     justify-content: space-between;
     background: var(--light-green);
@@ -132,7 +133,7 @@ body {
     align-items: center;
 }
 
-.perfil img {
+.perfil img, .perfil-hide img {
     margin-top: 8px;
     margin-left: 13px;
     width: 45px;
@@ -140,7 +141,7 @@ body {
     border-radius: 12px;
 }
 
-.perfil-infos {
+.perfil-infos, .perfil-infos-hide {
     margin-top: 10px;
     margin-left: 9px;
 }
@@ -155,18 +156,71 @@ body {
     font-weight: 400;
 }
 
-.perfil button {
+.perfil button, .perfil-hide button {
     margin-top: 18px;
 }
 
-.perfil button img {
+.perfil button img, .perfil-hide button img {
     width: 24px;
 }
 
-.btn-logout {
+.btn-logout, .btns-logout-hide {
     margin-right: 10px;
 }
 
 .sidebarOff {
     width: 78px;
+}
+
+.logo-imgOff {
+    display: none;
+}
+
+.sidebar-menu-hide {
+    margin-left: 22px;
+    background: none;
+    border: none;
+}
+
+.search-bar-hide {
+    background: var(--light-grey);
+    width: 50px;
+    height: 50px;
+}
+
+.search-bar-hide input {
+    display: none;
+}
+
+.btnsOff span {
+    display: none;
+}
+
+.btnsOff:hover {
+    width: 50px;
+    background: #8ed7c6;
+}
+
+.perfil-hide {
+    display: block;
+}
+
+.perfil-hide > img {
+    display: none;
+}
+
+.perfil-infos-hide {
+    display: none;
+}
+
+.perfil-hide button {
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 12px;
+    background: none;
+    border: none;
+}
+
+.main-hide {
+    margin-left: 98px;
 }
